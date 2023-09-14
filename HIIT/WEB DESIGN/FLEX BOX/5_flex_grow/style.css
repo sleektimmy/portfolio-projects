@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hero {
+  width: 100%;
+  background-color: #c7d1a8;
+  display: flex;
+}
+
+div {
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.box-1 {
+}
+
+.box-2 {
+}
+
+.box-3 {
+}
+
+.box-4 {
+}
+
+/* TRY WHAT YOU HAVE LEARNED BELOW */
+
+.small {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.double {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}

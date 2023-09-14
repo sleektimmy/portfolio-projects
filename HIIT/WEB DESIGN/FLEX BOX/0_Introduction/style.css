@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* I am the parent */
+section {
+  width: 100%;
+  background-color: rgb(199, 209, 168);
+  display: flex;
+}
+
+/* Children */
+div {
+  padding: 15px;
+  border: 1px solid red;
+}
+#content{
+  display: flex;
+
+}
+
+/* TRY WHAT YOU HAVE LEARNED BELOW */
+
+.small {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.double {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}

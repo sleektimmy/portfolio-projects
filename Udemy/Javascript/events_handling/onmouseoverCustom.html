@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover / onmouseout using custom functions</title>
+
+    <script>
+        function handleMouseOutEvent(x){
+            x.style.color = "red";
+            x.style.backgroundColor="yellow";
+            x.innerHTML = "MOUSEOUT"
+        }
+        function handleMouseOverEvent(y){
+            y.style.color = "yellow";
+            y.style.backgroundColor="blue";
+            y.innerHTML = "MOUSEOVER"
+        }
+
+</script>
+</head>
+<body>
+    <p onmouseover="handleMouseOverEvent(this)" onmouseout="handleMouseOutEvent(this)">Mouse over / Mouse Out</p>
+    
+</body>
+</html>

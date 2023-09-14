@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+label{
+    color: rgb(95, 4, 4);
+    font-weight: 900;
+    display: block;
+    margin-top: 10px;
+}
+form{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid rgb(77, 2, 2);
+
+}
+.submit{
+    margin-top: 10px;
+    cursor: pointer
+}

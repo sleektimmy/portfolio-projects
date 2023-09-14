@@ -1,0 +1,147 @@
+/* EXTERNAL FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* UTILITIES */
+:root {
+  --dark-blue: hsl(233, 47%, 7%);
+  --desaturated-blue: hsl(244, 38%, 16%);
+  --violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+/* END OF UTILITIES */
+
+/* MAIN */
+/* DOING DISPLAY FLEX ON THE BODY WILL END UP GIVING THE PRODUCT A WIDTH OF 0 */
+body {
+  background: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+/* DISPLAY FLEX HERE IS RESPONSIBLE FOR THE CONTENT ON THE LEFT AND THE IMAGE DIV ON THE RIGHT */
+.container {
+  /* 90% WIDTH MEANS 90% OF WHAT SO EVER OUR DISPLAY SCREEN GIVES OUR BLOCK CONTAINER DIV SINCE WE DID NOT EXPLICITELY DO SO IN THE BODY TAG */
+  width: 90%;
+  height: 500px;
+  display: flex;
+}
+
+/* THE CONTENT TAKES 100% HEIGHT WHICH IS THE SAME AS 500PX */
+.content {
+  background: var(--desaturated-blue);
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 0 70px;
+  /* THIS BRINGS ALL THE TEXT TO THE CENTER OF THE CONTENT DIV */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+/* THIS DIV IS RESPONSIBLE FOR THE PURPLE OVERLAY ON THE IMAGE, IT IS ACTING AS THE PARENT OF THE IMAGE DIV, AND THAT IS WHY FOR THE IMAGE DIV TO FIT IN, WE GAVE THE IMAGE DIV A HEIGHT AND WIDTH OF 100% */
+.overlay {
+  background: var(--violet);
+  height: 100%;
+  width: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* overflow-y: hidden; */
+}
+
+.image {
+  background: url('images/image-header-desktop.jpg') no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.25;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+h2 {
+  color: var(--white);
+  width: 259px;
+  font-weight: bolder;
+}
+
+span {
+  color: var(--violet);
+}
+
+.rating {
+  display: flex;
+  width: 339px;
+  justify-content: space-between;
+}
+
+.rate h3,
+.rate p {
+  color: var(--white);
+}
+
+p.sub {
+  color: var(--slightly-transparent-white);
+  font-size: 14px;
+}
+
+/* END MAIN */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 750px;
+  }
+
+  .overlay {
+    height: 32%;
+    width: 95%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .content {
+    height: 68%;
+    width: 95%;
+    border-radius: 0 0 20px 20px;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .image {
+    background: url('images/image-header-mobile.jpg') no-repeat center
+      cover/contain;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .rating {
+    flex-direction: column;
+  }
+
+  h2 {
+    width: 230px;
+    text-align: center;
+  }
+
+  .rate p.sub {
+    line-height: 0;
+  }
+}

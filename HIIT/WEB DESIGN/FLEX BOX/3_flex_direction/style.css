@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  background-color: rgb(199, 209, 168);
+  display: flex;
+  flex-direction: row;
+}
+
+div {
+  padding: 15px;
+  border: 1px solid red;
+}
+
+/* TRY WHAT YOU HAVE LEARNED BELOW */
+#content{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#content1{
+  display: flex;
+  flex-direction: row-reverse;
+ j
+}
+.small {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  width: 30%;
+}
+
+.double {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  width: 30%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+ <link rel="stylesheet" href="style.css">
+  <title>CPE Results Summary Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <div class="the-input" id="Agg">
+   <div class="head">
+   <img src="/assets/images/fuoye-logo.png" alt="" width="50px">
+    <h2>Welcome to Computer Engineering Result Aggregator</h2>
+   </div> 
+    <p>Kindly fill in your details below:
+    </p>
+    
+  <form action="" name="summaryform" >
+    <label for="Fname" id="namee">First Name: </label> <input type="text" name="Fname" id="names" placeholder="Enter First Name" required> <br>
+    <label for="Lname" id="namee">Last Name: </label> <input type="text" name="Lname" id="names" placeholder="Enter Last Name" required>
+    <br>    
+    <label for="matric" id="namee">Matric Number: </label> <input type="text" name="matric" id="names" placeholder="Enter matric number" required>
+    <fieldset> <legend>Enter 4 Results with Scores.</legend>
+      <label for="course1">Course Code: </label> <input type="text" name="course1" id="" placeholder="Eg CPE 501" required>
+      <label for="score1">Score: </label><input type="text" name = "score1" placeholder ="Eg: 0-100"> <br>
+      <label for="course2">Course Code: </label> <input type="text" name="course2" id="" placeholder="Eg CPE 501" required>
+      <label for="score2">Score: </label><input type="text" name = "score2" placeholder ="Eg: 0-100"> <br>
+      <label for="course3">Course Code: </label> <input type="text" name="course3" id="" placeholder="Eg CPE 501" required>
+      <label for="score3">Score: </label><input type="text" name = "score3" placeholder ="Eg: 0-100"> <br>
+      <label for="course4">Course Code: </label> <input type="text" name="course4" id="" placeholder="Eg CPE 501" required>
+      <label for="score4">Score: </label><input type="text" name = "score4" placeholder ="Eg: 0-100"> <br>
+    </fieldset>
+    <button type="button" onclick="validateSubmit()">Submit</button>
+  </form>
+  </div>
+
+  <div class="container" id="popup">
+    <div class="score">
+      <p>
+        Hello <span class="sName"></span>,
+         Your Result
+      </p>
+      <div class=" circle">
+        <h1 class="aveScore">76</h1>
+        <p class="hundred"> of 100</p>
+      </div>
+      <h3 class="remark"></h3>
+      <p class="you remarkPro"></p>
+    </div>
+<div class="summary">
+  <h4>Summary</h4>
+    <div class="react">
+      <img src="/assets/images/open-book-r.svg" width="20" alt="">
+      <p class="r">/p>
+<p class="slash"><span class="fScore1"></span> / 100</p>
+    </div>
+    <div class="memory">
+      <img src="/assets/images/open-book-o.svg" width="20" alt="">
+      <p class="m"></p>
+      <p class="slash"><span class="fScore2"></span> / 100</p>
+    </div>
+    <div class="verbal">
+      <img src="assets/images/open-book-lb.svg" width="20" alt="">
+      <p class="v"></p>
+      <p class="slash"><span class="fScore3"></span> / 100</p>
+    </div>
+    <div class="visual">
+      <img src="/assets/images/open-book-bl.svg" width="20" alt="">
+      <p class="vi"></p>
+      <p class="slash"><span class="fScore4"></span> / 100</p>
+    </div>
+    <p class="continue" onclick="closePopUp()">Continue</p>
+  </div>
+</div>
+ 
+<script src="app.js"></script>
+</body>
+</html>

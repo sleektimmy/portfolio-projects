@@ -1,0 +1,32 @@
+/* PROJECT COLORS */
+
+:root{
+    --light-grey: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--grayish-blue);
+    font-family: outfit, sans-serif;
+    font-size: 15px;
+}
+section{
+    background-color: var(--white);
+    width: 350px;
+    position:relative;
+    top: 100px;
+margin:  auto;
+border-radius: 10px;
+text-align: center;
+}
+
+img{
+    width: 330px;
+    border-radius: 10px;
+    /* TOP & BOTTOM SPACING */
+    margin: 10px 0;
+}
+p{
+    background-color: var(--light-grey);
+}

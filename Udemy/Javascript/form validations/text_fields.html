@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Text Fields </title>
+
+    <script>
+   function validate(){
+    var email = document.myForm.email.value;
+   var password =  document.myForm.password.value;
+   if(email == "" ){
+    alert("Email is mandatory");
+    document.myForm.email.focus();
+    return false
+}else if (password == ""){
+    alert("password is mandatory");
+    document.myForm.password.focus();
+    return false;
+   }else{
+    alert("Validation is succesful")
+    return true;
+   }
+   }
+</script>
+</head>
+<body>
+    <h3>User Registration:</h3>
+    <form name ="myForm" action="" onsubmit="return validate()">
+    Email: <input type="text" name="email"/>
+    Password: <input type ="password" name="password" />
+    <input type="submit" value="register"/>
+    </form>  
+</body>
+</html>

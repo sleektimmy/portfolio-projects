@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Check Boxes </title>
+
+    <script>
+        function validate(){
+            var valid = false;
+          var x =  document.myform.paymentmethod;
+          for ( var i=0;i<x.length;i++){
+            if(x[i].checked){
+                valid = true;
+                break;
+            }
+          }
+          if(valid){
+            alert("Validation Succesful")
+          }else{
+            alert("Please select a mode of Payment");
+            return false;
+          }
+           
+        }
+            
+        </script>
+</head>
+<body>
+    <h3>Select a Mode of Payment</h3>
+    <form name ="myform" onsubmit="return validate()">
+      <input type="radio" name="paymentmethod" value="cod">Cash on Delivery
+      <input type="radio" name="paymentmethod" value="creditcard">Credit Card
+      <input type="radio" name="paymentmethod" value="debit card">Debit Card
+        <input type="submit" value="submit">
+    </form>  
+</body>
+</html>

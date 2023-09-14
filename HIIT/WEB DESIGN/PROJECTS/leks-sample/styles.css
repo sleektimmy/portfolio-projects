@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #c00cdb, #4d016c, #3c00ff);
+}
+
+h1{
+    color:green;
+}

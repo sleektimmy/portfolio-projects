@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Global Variables</title>
+
+    <script>
+
+        var y = 30;
+        function fun1(){
+            var x = 20;// local variable
+            document.write("Inside fun 1 X:"+x+"<br/>")
+            document.write("Inside fun 1 Y:"+y+"<br/>")
+        }
+
+        fun1();
+        // document.write("Outside Fun 1 Y:" + y);
+
+        var y = 30;
+        function fun2(){
+            var a = 20;// local variable
+            document.write("Inside fun 2 X:"+a+"<br/>")
+            document.write("Inside fun 1 Y:"+y+"<br/>")
+        }
+
+        fun1();
+        fun2();
+        document.write("Outside Fun 1 Y:" + y);
+
+        
+</script>
+</head>
+<body>
+    
+</body>
+</html>

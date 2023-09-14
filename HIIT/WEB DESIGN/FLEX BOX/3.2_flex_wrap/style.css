@@ -1,0 +1,21 @@
+/* Common Styles */
+.content {
+  color: #fff;
+  /* font-weight font-size/line-height font-family */
+  font: 100 24px/100px sans-serif;
+  text-align: center;
+}
+
+.content div {
+  height: 50%;
+  width: 300px;
+}
+.red {
+  background: orangered;
+}
+.green {
+  background: yellowgreen;
+}
+.blue {
+  background: steelblue;
+}

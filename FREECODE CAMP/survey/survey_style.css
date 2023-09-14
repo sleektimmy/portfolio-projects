@@ -1,0 +1,94 @@
+h1, p{
+
+    text-align: center;
+    color: rgb(17, 104, 104);
+    text-shadow: 4px 4px 5px rgb(149, 255, 255);
+    font-family: kanit;
+    font-weight: bold;
+    margin: 3px 0;
+
+}
+
+p{
+    padding-top: 0;
+    color:rgb(0, 0, 0);
+    font-family: kanit;
+    font-style: italic;
+    text-shadow: 4px 4px 5px rgb(149, 255, 255);
+}
+.fa-skull-crossbones{
+    color: rgb(17, 104, 104);
+    text-shadow: 4px 4px 5px rgb(149, 255, 255);
+}
+body{
+    background: url(oladimeji-odunsi-xlW2POkR8wM-unsplash.jpg)  center/cover no-repeat ;
+    margin:0;
+    padding: 0;
+   
+    font-size: 16px;
+    font-family: kanit;
+}
+
+.back
+{
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(33, 255, 211, 0.377);
+}
+fieldset{
+    background-color: rgba(2, 72, 58, 0.664);
+    border-radius: 3px;
+   
+    border: solid aqua;
+    margin:auto;
+    width:400px;
+    padding:auto;
+    
+
+}
+input, label, section{
+   
+    display: block;
+    color: white;
+    margin:0.3rem;
+    padding: 0 0 2px 2px;
+    
+}
+
+input[type="radio"]{
+    display: inline;
+}
+input[type="checkbox"]{
+    display: inline;
+}
+
+input, textarea {
+    background-color: rgb(2, 57, 57);
+    border: 1px solid aqua;
+    
+   color:white;
+    min-height:1rem;
+}
+input[type="submit"]{
+    width:20%;
+    height: 20%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 4px;
+    font-size: 15px;
+    font-family: kanit;
+}
+
+textarea{
+    height:100px;
+    font-style: none;
+}
+
+input[type="submit"]:hover{
+    background-color: aqua;
+    color:black;
+}
+

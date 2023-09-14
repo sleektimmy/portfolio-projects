@@ -1,0 +1,83 @@
+
+*{
+    box-sizing: border-box;
+}
+:root {
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+   --Tomato: hsl(4, 100%, 67%);
+   --TomatoT: hsla(4, 100%, 67%, 0.238);
+}
+
+body{
+    background-color: var(--CharcoalGrey);
+    width: 1440px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.container{
+    width: 40%;
+    height: 450px;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.image{
+    width: 50%;
+    height:100%;
+    background: url(/assets/images/illustration-sign-up-desktop.svg) center/contain no-repeat;
+    background-position: right;
+}
+.text{
+    width: 50%;
+    display: block;
+    padding:10px
+}
+
+input{
+    display: inline-block;
+    width: 100%;
+    border: 2px solid var(--Tomato);
+    background-color:var(--TomatoT);
+    padding: 10px;
+    padding-left: 20px;
+}
+label{
+    font-weight: 700;
+    color: var(--DarkSlateGrey);
+}
+button{
+    background-color: var(--CharcoalGrey);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px
+}
+
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, var(--Tomato), var(--TomatoT));
+    border: 0px;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    right: 40px;
+    align-items: start;
+    font-size: 12px;
+}

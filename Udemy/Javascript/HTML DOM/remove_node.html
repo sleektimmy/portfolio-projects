@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: Create and Remove Nodes</title>
+
+    <script>
+
+        function handleRemove(){
+            var parent = document.getElementById("div1");
+            var child = document.getElementById("p1");
+            parent.removeChild(child);
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">All the power is within you</p>
+        <p id="p2">You can do anything</p>
+        <input type="button" value="Remove" onclick="handleRemove()">
+    </div>
+</body>
+</html>

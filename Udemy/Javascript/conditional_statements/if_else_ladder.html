@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If ELse lADDE</title>
+
+    <script>
+        var  javascriptmarks = parseInt(prompt("Please enter Javascript Marks"));
+        var  javasmarks = parseInt(prompt("Please enter Java Marks"));
+        var  dotnetmarks = parseInt(prompt("Please enter .Net Marks"));
+
+        var total = javascriptmarks + javasmarks + dotnetmarks;
+        document.write("Total Marks: "+total +"</br>");
+
+        var ave = total/3;
+        document.write("Average: " + ave + "</br>");
+        
+        if(javascriptmarks>=35 && javasmarks>=35 && dotnetmarks>=35){
+            document.write("Result: Passed " + "</br>");
+            if(ave>=35 && ave<60){
+                document.write("Grade: C");
+            
+            }
+            else if (ave>=60 && ave <=70 ){
+                document.write("Grade: B");
+            }
+            else{
+                document.write("Grade: A");
+            }
+        }
+
+        else{
+            document.write("Result:Failed");
+        }
+        
+</script>
+</head>
+<body>
+    
+</body>
+</html>

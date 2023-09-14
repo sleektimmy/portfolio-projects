@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(234, 223, 223);
+    
+}

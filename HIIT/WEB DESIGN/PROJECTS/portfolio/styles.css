@@ -1,0 +1,439 @@
+:root{
+    ---background: #050609;
+    --text: #F5D0C5;
+    --white: #ffffff;
+    --shapes: #9d53ec;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    scroll-behavior: smooth;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: var(---background);
+    
+}
+#home
+{
+    height: 100vh;
+    width: 100%;
+}   
+
+#about{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+
+}
+#my-skills{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--shapes);
+
+}
+#projects{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    
+}
+#contact{
+    height: 100vh;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: var(--shapes);
+
+}
+.computer{
+   float:right
+}
+.hello{
+    color: var(rgb(222, 26, 218));
+}
+.logo{
+    float:left;
+    margin-top: -5px;
+}
+
+.head{
+    display: flex;
+    width: 100%;
+   padding-left: 50px;
+   padding-right: 50px;
+    display: block;
+    align-items: start;
+    
+}
+
+ul{ 
+    list-style: none;
+    margin-top: 20px;
+    display: flex;  
+    justify-content: space-evenly;
+}
+ul a {
+    text-decoration: none;
+    color: var(--text);
+}
+ul a:selection {
+    color: white;
+    border-bottom: solid 4px orangered;
+   border-bottom-style: double;
+   padding-bottom: 6px;
+   border-bottom-width: 2;
+    padding: 3px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+}
+ul a:hover {
+    color: white;
+    border-bottom: solid 4px var(--shapes);
+   border-bottom-style: double;
+   padding-bottom: 6px;
+   border-bottom-width: 2;
+    padding: 3px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+}
+
+.hr, .hr2{
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid orangered;
+}
+.hr2{
+    
+    border: 2px solid var(--shapes);
+    margin-top: 5px;
+}
+
+.about-me{
+   position: relative;
+   top: 150px;
+   left: 200px;
+   float: left;
+}
+.hello{
+    color: var(--text);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+#box{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: orangered;
+    display: block;
+}
+
+.skk{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.mySkill{
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.container-skills{
+max-width: 1100px;
+width: 100%;
+height: 500px;
+background-color: white;
+padding: 20px;
+position: relative;
+margin-top: 30px;
+border-radius: 30px;
+margin: 30px auto;
+box-shadow: rgba(0,0,0,0.2) 4px 3px 10px 6px;
+display: flex;
+justify-content: space-evenly;
+}
+
+h2,h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: var(--shapes);
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+.divider{
+    height: 100%;
+    width: 5px;
+    border-radius: 50px;
+    background-color: rgba(55, 55, 55, 0.22);
+
+}
+.web-image, .graphics-image, .motion-image{
+    display: block;
+    margin: auto;
+}
+.web-design{
+    width:300px;
+}
+.html, .css, .javascript{
+    padding-top: 30px;
+    font-size: 15px;
+    display: block;
+    color: var(--shapes);
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.skill-bar{
+    height: 15px;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.skill-progress{
+    background: linear-gradient(to right, orangered, orange );
+    width:95%;
+    height: 15px;
+    display: block;
+}
+.skill-progress-css{
+    background: linear-gradient(to right, orangered, orange );
+    width:80%;
+    height: 15px;
+    display: block;
+}
+.skill-progress-java{
+    background: linear-gradient(to right, orangered, orange );
+    width:60%;
+    height: 15px;
+    display: block;
+}
+.skill-progress-ae{
+    background: linear-gradient(to right, orangered, orange );
+    width:80%;
+    height: 15px;
+    display: block;
+}
+.skill-progress-pp{
+    background: linear-gradient(to right, orangered, orange );
+    width:50%;
+    height: 15px;
+    display: block;
+}
+.tooltip{
+    padding: 3px;
+    color: white;
+    font-size: 10px;
+    background-color: var(--shapes);
+    border-radius: 3px;
+    height: 15px;
+   position: relative;
+   margin-left: 260px;
+   top:-4px;
+}   
+.tooltip-css{
+    padding: 3px;
+    color: white;
+    font-size: 10px;
+    background-color: var(--shapes);
+    border-radius: 3px;
+    height: 15px;
+   position: relative;
+   margin-left: 220px;
+   top:-4px;
+}   
+.tooltip-java{
+    padding: 3px;
+    color: white;
+    font-size: 10px;
+    background-color: var(--shapes);
+    border-radius: 3px;
+    height: 15px;
+   position: relative;
+   margin-left: 180px;
+   top:-4px;
+}   
+.tooltip-ae{
+    padding: 3px;
+    color: white;
+    font-size: 10px;
+    background-color: var(--shapes);
+    border-radius: 3px;
+    height: 15px;
+   position: relative;
+   margin-left: 180px;
+   top:-4px;
+}   
+.tooltip-pp{
+    padding: 3px;
+    color: white;
+    font-size: 10px;
+    background-color: var(--shapes);
+    border-radius: 3px;
+    height: 15px;
+   position: relative;
+   margin-left: 100px;
+   top:-4px;
+}   
+.tooltip-in{
+    padding: 3px;
+    color: white;
+    font-size: 10px;
+    background-color: var(--shapes);
+    border-radius: 3px;
+    height: 15px;
+   position: relative;
+   margin-left: 150px;
+   top:-4px;
+}   
+
+.about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* max-width: 1000px; */
+    gap: 30px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.about h5{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    text-transform: capitalize;
+    display: block;
+    width: fit-content;
+    position: relative;
+    top: 30px;
+    color: white;
+    background-color:var(--shapes);
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px rgba(129, 38, 8, 0.2);
+    
+}
+.about p{
+    display: block;
+    width:700px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius:8px;
+    border-top:  orangered solid 7px;
+    border-bottom:  orangered solid 7px;
+    box-shadow: 2px 2px 2px rgba(129, 38, 8, 0.2);
+
+}
+.hr3{
+    
+    border: 2px solid var(--shapes);
+    margin-top: 5px;
+    height: 100%;
+}
+
+.who-am-i, .why-hire{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.about img{
+    position: relative;
+    left: 80px;
+    transform: rotate(-20deg);
+}
+
+.about img:hover{
+   transform: scale(1.1);
+}
+.contact-container{
+    display: flex;
+    width: 70%;
+    color: var(--shapes);
+    height: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    /* margin-top: ; */
+}
+.contact-text, .contact-form{
+    width: 50%;
+    text-align: center;
+}
+
+.contactMe{
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.the-button{
+    width: 70%;
+    /* display: block; */
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--shapes);
+} 
+.contact-form form{
+    padding: 0 30px;
+    border: none;
+    height: 50px;
+    margin: 0 auto;
+}
+.contact-form input, .contact-form textarea{
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    background-color: #9745ed1a;
+    border-radius: 10px;
+    border: 2px solid var(--shapes);
+    color: var(--shapes);
+    /* flex-direction: column; */
+    /* margin: 10px; */
+    width: 100%;
+    padding: 10px;
+    
+
+    /* height: 40px; */
+}
+
+.proj-img{
+width: 300px;
+}
+.proj-container{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 300px;
+    border-radius:8px;
+    border-top:  orangered solid 7px;
+    border-bottom:  orangered solid 7px;
+    box-shadow: 2px 2px 2px rgba(129, 38, 8, 0.2)x;
+}
