@@ -1,0 +1,126 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+HD.exe -- emu8086 assembler version: 4.08  
+ 
+[ 29 Jan 2022  --  09:59:44 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       ;AUTHOR: YUSUF TIMILEYIN ADURAGBEMI
+[   2]        :                                       ;MATRIC: CPE/2018/1112
+[   3]        :                                       ;PROGRAM TO CALCULATE SUM & AVERAGE OF TWO NUMBERS
+[   4]        :                                       ;USING MASM ASSEMBLER
+[   5]        :                                       
+[   6]        :                                       .MODEL SMALL
+[   7]        :                                       .STACK
+[   8]        :                                       DATA SEGMENT   ; Beginning of data segment
+[   9]    0100: 0F                                    num1 DB 15 ;Declaration of first value
+[  10]    0101: 03                                    num2 DB 3   ;Declaration of second value
+[  11]    0102: 00                                    average DB ?          ;Empty slot to store average
+[  12]    0103: 20 72 65 6D 61 69 6E 64 65 72 20 24   remainder DB " remainder ",'$'
+                                                    
+[  13]    010F: 00                                    rem DB ?           ;Empty slot to store remainder
+[  14]    0110: 00                                    sum DB ? ; Empty slot for to store sum
+[  15]        :                                       DATA ENDS    ;End of data segment
+[  16]        :                                       CODE SEGMENT   ; Beginning of code segment
+[  17]        :                                       ASSUME CS: CODE, DS: DATA
+[  18]    0120:                                       Start:     ;Starting address
+[  19]    0120: B8 10 00                              MOV AX, DATA
+[  20]    0123: 8E D8                                 MOV DS, AX   ;Initializes the DS(Data segment) register
+[  21]        :                                       
+[  22]    0125: A0 00 00                              MOV AL, num1
+[  23]    0128: 02 06 01 00                           ADD AL, num2
+[  24]    012C: B4 00                                 MOV AH, 00   ; Clears AH Register(Because this is where our remainder will be)
+[  25]    012E: B3 02                                 MOV BL, 02   ; Loads divisor into BL register
+[  26]    0130: F6 F3                                 DIV BL    ; DIV : divide AX by BL. Remainder in AH and result in AL
+[  27]        :                                       
+[  28]        :                                       
+[  29]    0132: 04 30                                 ADD AL, 48
+[  30]    0134: A2 02 00                              MOV average, AL  ;stores average
+[  31]    0137: 80 C4 30                              ADD AH, 48
+[  32]    013A: 88 26 0F 00                           MOV rem, AH   ;stores remainder
+[  33]        :                                       
+[  34]    013E: E8 05 00                              CALL display           ;call procedure "display"
+[  35]        :                                       
+[  36]    0141: B8 00 4C                              MOV AX, 4C00H  ;Returns control to MS-DOS
+[  37]    0144: CD 21                                 INT 21H
+[  38]        :                                       
+[  39]    0146:                                       display proc           ;Procedure "display"
+[  40]        :                                       
+[  41]        :                                       
+[  42]    0146: B2 0A                                 MOV dl, 10
+[  43]    0148: B4 02                                 MOV ah, 02h
+[  44]    014A: CD 21                                 INT 21h
+[  45]        :                                       
+[  46]    014C: B4 02                                 MOV AH, 02H
+[  47]    014E: 8A D0                                 MOV DL, AL
+[  48]    0150: CD 21                                 INT 21H
+[  49]        :                                       
+[  50]    0152: B4 02                                 MOV AH, 02H
+[  51]    0154: 8A 16 02 00                           MOV DL, average
+[  52]    0158: CD 21                                 INT 21H    ;Displays average
+[  53]        :                                       
+[  54]    015A: B4 09                                 MOV AH, 09H
+[  55]    015C: BA 03 00                              LEA DX, remainder
+[  56]    015F: CD 21                                 INT 21H    ;Displays message "remainder"
+[  57]        :                                       
+[  58]    0161: B4 02                                 MOV AH, 02H
+[  59]    0163: 8A 16 0F 00                           MOV DL, rem
+[  60]    0167: CD 21                                 INT 21H    ;Displays remainder
+[  61]    0169: C3                                    ret     ;returns control back to the point this procedure was called
+[  62]        :                                       display endp           ;End of procedure
+[  63]        :                                       
+[  64]        :                                       
+[  65]        :                                       
+[  66]        :                                       CODE ENDS    ;End of code segment
+[  67]        :                                       END Start    ;End of program
+[  68]        :                                       
+[  69]        :                                       
+[  70]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: 6A      -   bytes on last page (l.byte)
+0003: 01      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 00      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 00      -   SP - stack pointer (l.byte)
+0011: 01      -   SP - stack pointer (h.byte)
+0012: D8      -   check sum (l.byte)
+0013: 10      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 12      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 01      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 12      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

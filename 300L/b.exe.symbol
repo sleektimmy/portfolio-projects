@@ -1,0 +1,27 @@
+< THE SYMBOL TABLE >  b.exe  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+STACK                    	00000     	-5        	SEGMENT   	(ITSELF)  
+DATA                     	00010     	-5        	SEGMENT   	(ITSELF)  
+NUM1                     	00000     	1         	VAR       	DATA      
+NUM2                     	00001     	1         	VAR       	DATA      
+AVERAGE                  	00002     	1         	VAR       	DATA      
+REMAINDER                	00003     	1         	VAR       	DATA      
+REM                      	0000F     	1         	VAR       	DATA      
+SUM                      	00010     	1         	VAR       	DATA      
+CODE                     	00012     	-5        	SEGMENT   	(ITSELF)  
+START                    	00000     	-1        	LABEL     	CODE      
+DISPLAY                  	00026     	-1        	NEAR      	CODE      
+S_DCL_LOC1TMP            	0002A     	1         	VAR       	CODE      
+SKIP_DCL_LOC1TMP         	0003D     	-1        	LABEL     	CODE      
+NEXT_CHAR_LOC1TMP        	00040     	-1        	LABEL     	CODE      
+PRINTED_LOC1TMP          	0004E     	-1        	LABEL     	CODE      
+S_DCL_LOC2TMP            	00058     	1         	VAR       	CODE      
+SKIP_DCL_LOC2TMP         	00070     	-1        	LABEL     	CODE      
+NEXT_CHAR_LOC2TMP        	00073     	-1        	LABEL     	CODE      
+PRINTED_LOC2TMP          	00081     	-1        	LABEL     	CODE      
+===================================================================================================
+[ 29 Jan 2022  --  10:15:33 ] 
+< END >
+ 

@@ -1,0 +1,38 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+noname.com -- emu8086 assembler version: 4.08  
+ 
+[ 28 Jan 2022  --  16:19:59 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       .model tiny                  ; com program , Code Data & Stack in one 64K Segment
+[   2]    0100:                                       .code                          ; code segment
+[   3]        :                                       org 100h                  ; code starts at offset 100h
+[   4]        :                                       
+[   5]    0100:                                       main proc near
+[   6]        :                                       
+[   7]    0100: B4 09                                 mov ah,09h                  ; function to display a string
+[   8]    0102: BA 0D 01                              mov dx,offset message  ; offset of Message string terminating with $
+[   9]    0105: CD 21                                 int 21h                  ; dos interrupt
+[  10]        :                                       
+[  11]    0107: B4 4C                                 mov ah,4ch                  ; function to terminate
+[  12]    0109: B0 00                                 mov al,00
+[  13]    010B: CD 21                                 int 21h                  ; Dos Interrupt
+[  14]        :                                       
+[  15]        :                                       endp
+[  16]    010D: 48 65 6C 6C 6F 20 57 6F 72 6C 64 20   message db "Hello World $"  ; Message to be displayed terminating with a $
+                24                                  
+[  17]        :                                       
+[  18]        :                                       end main
+[  19]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================

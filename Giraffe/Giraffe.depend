@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1586707690 source:c:\users\ty\documents\codes\giraffe\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1586450807 source:c:\users\ty\documents\codes\giraffe\giraff.c
+	<stdio.h>
+	<stdlib.h>
+
