@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Coin</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+       hr{
+        height: 4px;
+        background-color: grey;
+       }
+       *{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+    
+       }
+
+       .rotate{
+        transform: rotate(90deg);
+        height: fit-content;
+        width: 110px;
+        position: relative;
+        top: 34px;
+       }
+    </style>
+</head>
+<body class="container-fluid bg-black">
+    <nav class="navbar bg-black ">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white h3" href="#">Flip Coin</a>
+         
+            
+              <a class="nav-link active text-white fs-6" aria-current="page" href="#">Stats</a>
+              <a class="nav-link text-white border fs-6 p-1 rounded-pill" href="#">Mentions</a>
+              <a class="nav-link text-white fs-6" href="#">Claim</a>
+              <a class="nav-link text-white fs-6" href="#">Revenue</a>
+           
+
+            <div class="navbar-nav">
+                <a class="nav-item border p-1 rounded-pill fs-6 nav-link text-white">LOGOUT</a>
+            </div
+        
+        </div>
+      </nav>
+      <hr>
+      <p class="fs-1 fw-bold text-center text-white">MY MENTIONS</p>
+      <div class=" container-sm border text-center border-secondary rounded-5 p-4">
+        <div class="row text-white">
+            <div class="col-md-2   text-uppercase">Daily Kick backs <br> 
+            <p class="fs-1 fw-bold">14</p>
+            </div>
+            <div class="col-md-1"><hr class="rotate d-none d-xxl-block d-lg-block d-xl-block"></div>
+            <div class="col-md-2  text-uppercase">Daily tweets <br> 
+                <p class="fs-1 fw-bold">2/5</p>
+            </div>
+            <div class="col-md-1"><hr class="rotate d-none d-xxl-block d-lg-block d-xl-block"></div>
+            
+            <div class="col-md-2  text-uppercase">Daily quotes <br> 
+                <p class="fs-1 fw-bold">10/10</p>
+            </div>
+            
+            <div class="col-md-1"><hr class="rotate d-none d-xxl-block d-lg-block d-xl-block"></div>
+            <div class="col-md-2  text-uppercase">Daily replies <br> 
+            <p class="fs-1 fw-bold">12/15</p>
+            </div>
+    
+        </div>
+      </div>
+
+      <div class="container border py-2 rounded-3 text-white border-secondary my-4 d-none d-xxl-block d-sm-block">
+       <div class="row p-2 fw-bold">
+        <div class="col-sm">Index</div>
+        <div class="col-sm">Type</div>
+        <div class="col-sm">Twitter</div>
+        <div class="col-sm">Views</div>
+        <div class="col-sm">Interactions</div>
+        <div class="col-sm">Points</div>
+        <div class="col-sm">Created At</div>
+       </div>
+       <hr>
+       <div class="row p-2 ">
+           <div class="col"># 73</div>
+           <div class="col bg-secondary  text-center rounded-pill ">Tip Quotes</div>
+           <div class="col"><a href="http://www.twitter.com" target="_blank">View on Twitter</a></div>
+           <div class="col">33,000</div>
+           <div class="col">5,242</div>
+           <div class="col">1,000,000</div>
+           <div class="col">9/21/2023, 12:08:37 AM</div>
+        </div>
+        <hr>
+        <div class="row p-2 ">
+            <div class="col"># 73</div>
+            <div class="col bg-secondary  text-center rounded-pill ">Original Tweet</div>
+            <div class="col"><a href="http://www.twitter.com" target="_blank">View on Twitter</a></div>
+            <div class="col">72,000</div>
+            <div class="col">3,452</div>
+            <div class="col">1,000,000</div>
+            <div class="col">9/21/2023, 12:05:22 AM</div>
+         </div>
+         <hr>
+         <div class="row p-2 ">
+            <div class="col"># 73</div>
+            <div class="col bg-secondary  text-center rounded-pill ">Tip Quotes</div>
+            <div class="col"><a href="http://www.twitter.com" target="_blank">View on Twitter</a></div>
+            <div class="col">25,000</div>
+            <div class="col">18</div>
+            <div class="col">100,000</div>
+            <div class="col">9/21/2023, 12:03:23 AM</div>
+         </div>
+         <hr>
+         <div class="row p-2 ">
+            <div class="col"># 73</div>
+            <div class="col bg-secondary  text-center rounded-pill ">Tweet Reply</div>
+            <div class="col"><a href="http://www.twitter.com" target="_blank">View on Twitter</a></div>
+            <div class="col">33,000</div>
+            <div class="col">5,242</div>
+            <div class="col">1,000,000</div>
+            <div class="col">9/21/2023, 12:00:11 AM</div>
+         </div>
+        </div>
+        <p class="text-center text-white">
+           Mentions are recalculated on a rolling interval
+        </p>
+      <!-- <div class="container border rounded-3 text-white border-secondary my-4">
+        <table class="table">
+            <thead class="table-dark">
+                <tr class="text-white">
+                    <th scope="col">Index</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Twitter</th>
+                    <th scope="col">Views</th>
+                    <th scope="col">Interactions</th>
+                    <th scope="col">Points</th>
+                    <th scope="col">Created At</th>
+                </tr>
+            </thead>
+            <tbody class="table-dark">
+                <tr>
+                    <td> #8</th>
+                    <td class="bg-secondary py-2 rounded-pill text-center"> Tip Reply</td>
+                    <td><a href="http://www.twitter.com" target="_blank">View on Twitter</a></td>
+                    <td>39,020</td>
+                    <td>7,000</td>
+                    <td>100,0000</td>
+                    <td>9/21/2023, 12:08:37 AM</td>
+                </tr>
+            </tbody>
+
+        </table>
+      </div> -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
